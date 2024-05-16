@@ -2,99 +2,136 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio Web</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mi Sitio Web</title>
+	<!-- Link a Fonts Awesome
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		 -->
+		<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <header>
-        <!-- Contenedor de mi imagen -->
-        <div>
-            <img src="/assets/perrito.avif" alt="Perrito" style="max-width: 200px;">
-        </div>
-        <!-- Contenedor de mi lista -->
-        <div>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Log Out</a></li>
-            </ul>
-        </div>
-    </header>
-    <h1>Mi sitio web</h1>
-    <!-- Nueva Seccion -->
-    <section>
-        <!-- caja 1 dentro de section -->
-        <div>
-            <!-- elemento 1 en caja 1 -->
-            <div><img src="/assets/gatito.jpg" alt="Gatito" style="max-width: 200px;"></div>
-            <!-- elemento 2 en caja 1 -->
-            <div>
-                <h2>Titulo 1</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi illum cumque vero! Atque dolorum
-                    fugit fugiat adipisci optio iure corrupti maxime accusantium provident asperiores illo qui quam
-                    veniam, dolore vero.</p>
-            </div>
-        </div>
-        <!-- caja 2 dentro de section -->
-        <div>
-            <!-- elemento 1 en caja 2 -->
-            <div>
-                <h2>Titulo 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet beatae illum illo deserunt odio facilis
-                    voluptas veniam autem voluptatem velit, neque dignissimos exercitationem iste, libero nostrum nam
-                    nisi cum ad.</p>
-            </div>
-            <!-- elemento 2 en caja 2 -->
-            <div>
-                <img src="/assets/tortuga.jpg" alt="Tortuga" style="max-width: 200px;">
-            </div>
-        </div>
-    </section>
+	<header>
+		<!-- Contenedor de mi imagen -->
+		<div class="header__image">
+			<img src="/assets/perrito.avif" alt="Perrito">
+		</div>
+		<!-- Contenedor de mi lista -->
+		<div class="header__links-container">
+			<ul class="header__links">
+				<li><a href="">Home</a></li>
+				<li><a href="">About Us</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href="">Log Out</a></li>
+			</ul>
+		</div>
+	</header>
+	<h1>Mi sitio web</h1>
+	<!-- Nueva Seccion -->
+	<section>
+		<!-- caja 1 dentro de section -->
+		<div>
+			<!-- elemento 1 en caja 1 -->
+			<div><img src="/assets/gatito.jpg" alt="Gatito"></div>
+			<!-- elemento 2 en caja 1 -->
+			<div>
+				<h2>Titulo 1</h2>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi illum cumque vero! Atque dolorum
+					fugit fugiat adipisci optio iure corrupti maxime accusantium provident asperiores illo qui quam
+					veniam, dolore vero.</p>
+			</div>
+		</div>
+		<!-- caja 2 dentro de section -->
+		<div>
+			<!-- elemento 1 en caja 2 -->
+			<div>
+				<h2>Titulo 2</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet beatae illum illo deserunt odio facilis
+					voluptas veniam autem voluptatem velit, neque dignissimos exercitationem iste, libero nostrum nam
+					nisi cum ad.</p>
+			</div>
+			<!-- elemento 2 en caja 2 -->
+			<div>
+				<img src="/assets/tortuga.jpg" alt="Tortuga">
+			</div>
+		</div>
+	</section>
 
-    <footer>
-        <div>
-            <h4></h4>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div>
-            <img src="" alt="">
-        </div>
-        <div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="https://github.com/mavrk1604" target="_blank">
-                            <i class="fa-brands fa-github" style="color: #63E6BE;"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/manuel-alejandro-agudelo-velasquez-2b3831186
+	<form action="">
+		<div>
+			<label for="">Nombre</label>
+			<input type="text" placeholder="Ej: Manuel">
+		</div>
+		<div>
+			<label for="">Telefono</label>
+			<input type="number" placeholder="Ej: 3005551234">
+		</div>
+		<div>
+			<label for="">Correo</label>
+			<input type="email" placeholder="Ej: manuel@correo.com">
+		</div>
+		<div>
+			<label for="">Fecha de Nacimiento</label>
+			<input type="date">
+		</div>
+		<div>
+			<label for="">Colores</label>
+			<select>
+				<option value="Colores">Negro</option>
+				<option value="Colores">Blanco</option>
+				<option value="Colores">Azul</option>
+			</select>
+		</div>
+		<div>
+			<button type="submit">Submit</button>
+		</div>
+	</form>
+
+	<footer>
+		<div>
+			<h4></h4>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div>
+			<img src="" alt="">
+		</div>
+		<div>
+			<!-- Seccion de iconos de Fonts Awesome
+			<div>
+				<ul>
+					<li>
+						<a href="https://github.com/mavrk1604" target="_blank">
+							<i class="fa-brands fa-github" style="color: #63E6BE;"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/manuel-alejandro-agudelo-velasquez-2b3831186
 
                         " target="_blank">
-                            <i class="fa-brands fa-linkedin" style="color: #63E6BE;"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/messerschmitt__">
-                            <i class="fa-brands fa-instagram" style="color: #63E6BE;"></i> 
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <a href=""></a>
-                <a href=""></a>
-            </div>
-        </div>
-    </footer>
+							<i class="fa-brands fa-linkedin" style="color: #63E6BE;"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/messerschmitt__">
+							<i class="fa-brands fa-instagram" style="color: #63E6BE;"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			 -->
+			<div>
+				<a href=""></a>
+				<a href=""></a>
+			</div>
+		</div>
+	</footer>
 
 </body>
 
