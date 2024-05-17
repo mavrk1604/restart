@@ -2,29 +2,40 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;    /* box-sizing: border-box; Hace que el tamano que uno le de a una caja incluya el borde "1px por lado" */
+   font-family: "Roboto", sans-serif;
+  }
 
-}
+  body {
+    background-color: rgb(31, 179, 138);
+
+  }
 
 header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 5px;
+  justify-content: center;
+  padding: 20px;
   align-items: center;
   background-color: cornflowerblue;
+  margin: 32px 2rem 32px 2rem;
+  border-radius: 25px;
+  position: sticky;
+  top: 0;
+}
+
+header img {
+  width: 150px;
+  border-radius: 75px;
 }
 
 .header__links-container {
-width: 50%;
+  width: 50%;
+  padding: 20px;
 }
 .header__links {
   display: flex;
   flex-direction: row;
-justify-content: space-between;
-}
-
-.header__image img {
-  width: 150px;
+  justify-content: space-around;
+  font-weight: bolder;
 }
 
 li {
@@ -35,3 +46,91 @@ a {
   text-decoration: none;
   color: black;
 }
+
+h1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  background-color: coral;
+  padding: 20px;
+  margin: 32px 2rem 32px 2rem;
+  border-radius: 25px;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  background-color: coral; 
+  margin: 32px 2rem 32px 2rem;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  gap: 15px;
+}
+
+
+.card__img img{
+  width: 150px;
+  border-radius: 25px;
+}
+
+.font-lg {
+font-size: 24pt;
+}
+
+.font--md {
+  font-size: 12pt;
+}
+
+.font--sm {
+  font-size: 8pt;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background-color: coral;
+  padding: 20px;
+  margin: 32px 2rem 32px 2rem;
+  border-radius: 25px;
+}
+button {
+  width: 75px;
+  height: 25px;
+  color: white;
+  background-color: rgb(31, 179, 138);
+  border: none;
+  border-radius: 12.5px;
+}
+
+button:hover {
+  width: 75px;
+  height: 25px;
+  color: white;
+  border: none;
+  background-color: cornflowerblue;
+  border-radius: 12.5px;
+  transition: 0.5s;
+}
+
+input:focus {
+  border: solid 2px black;
+  box-shadow: 5px 5px black;
+}
+
+button:active {
+  color: black;
+  background-color: rgb(243, 117, 134);
+}
+

@@ -11,6 +11,9 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 		 -->
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,43 +27,46 @@
 			<ul class="header__links">
 				<li><a href="">Home</a></li>
 				<li><a href="">About Us</a></li>
-				<li><a href="">Contact</a></li>
+				<li><a href="#form">Contact</a></li>
 				<li><a href="">Log Out</a></li>
 			</ul>
 		</div>
 	</header>
-	<h1>Mi sitio web</h1>
 	<!-- Nueva Seccion -->
+	<h1>Mi sitio web</h1>
+
 	<section>
 		<!-- caja 1 dentro de section -->
-		<div>
-			<!-- elemento 1 en caja 1 -->
-			<div><img src="/assets/gatito.jpg" alt="Gatito"></div>
-			<!-- elemento 2 en caja 1 -->
+		<div class="card">
 			<div>
-				<h2>Titulo 1</h2>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi illum cumque vero! Atque dolorum
+			</div>
+			<!-- elemento 1 en caja 1 -->
+			<div class="card__img"><img src="/assets/gatito.jpg" alt="Gatito"></div>
+			<!-- elemento 2 en caja 1 -->
+			<div class="card__info">
+				<h2 class="font--lg">Titulo 1</h2>
+				<p class="font--md">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi illum cumque vero! Atque dolorum
 					fugit fugiat adipisci optio iure corrupti maxime accusantium provident asperiores illo qui quam
 					veniam, dolore vero.</p>
 			</div>
 		</div>
 		<!-- caja 2 dentro de section -->
-		<div>
+		<div class="card">
 			<!-- elemento 1 en caja 2 -->
-			<div>
-				<h2>Titulo 2</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet beatae illum illo deserunt odio facilis
+			<div class="card__info">
+				<h2 class="font--lg">Titulo 2</h2>
+				<p class="font--md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet beatae illum illo deserunt odio facilis
 					voluptas veniam autem voluptatem velit, neque dignissimos exercitationem iste, libero nostrum nam
 					nisi cum ad.</p>
 			</div>
 			<!-- elemento 2 en caja 2 -->
-			<div>
+			<div class="card__img">
 				<img src="/assets/tortuga.jpg" alt="Tortuga">
 			</div>
 		</div>
 	</section>
 
-	<form action="">
+	<form action="" id="form">
 		<div>
 			<label for="">Nombre</label>
 			<input type="text" placeholder="Ej: Manuel">
@@ -86,7 +92,7 @@
 			</select>
 		</div>
 		<div>
-			<button type="submit">Submit</button>
+			<button type="submit" class="submit--button">Submit</button>
 		</div>
 	</form>
 
