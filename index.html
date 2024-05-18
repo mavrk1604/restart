@@ -4,12 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mi Sitio Web</title>
-	<!-- Link a Fonts Awesome
+	<title>Stratos AV</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-		 -->
+		
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +16,11 @@
 </head>
 
 <body>
+
 	<header>
 		<!-- Contenedor de mi imagen -->
 		<div class="header__image">
-			<img src="/assets/perrito.avif" alt="Perrito">
+			<img src="/assets/genx.jpeg" alt="GEnx Engine">
 		</div>
 		<!-- Contenedor de mi lista -->
 		<div class="header__links-container">
@@ -33,40 +33,57 @@
 		</div>
 	</header>
 	<!-- Nueva Seccion -->
-	<h1>Mi sitio Web</h1>
+	<h1>Stratos Aviation</h1>
 
 	<section>
+		<div>
+			<h2>Aviones de ultra largo alcance (ULR)</h2>
+		</div>
 		<!-- caja 1 dentro de section -->
 		<div class="card">
-			<div>
-			</div>
 			<!-- elemento 1 en caja 1 -->
-			<div class="card__img"><img src="/assets/gatito.jpg" alt="Gatito"></div>
+			<div class="card__img"><img src="/assets/b787.jpeg" alt="Boeing 787"></div>
 			<!-- elemento 2 en caja 1 -->
 			<div class="card__info">
-				<h2 class="font--lg">Titulo 1</h2>
-				<p class="font--md">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi illum cumque vero! Atque dolorum
-					fugit fugiat adipisci optio iure corrupti maxime accusantium provident asperiores illo qui quam
-					veniam, dolore vero.</p>
+				<h2 class="font--lg">Boeing 787 "Dreamliner"</h2>
+				<p class="font--md">El Boeing 787, es un avión comercial de tamaño medio y fuselaje ancho desarrollado por el
+				fabricante estadounidense Boeing Commercial Airplanes desde 2009. La aeronave, de doble pasillo, puede transportar entre
+				217 y 323 pasajeros, dependiendo del tipo (787-8, -9 o -10). Su primer vuelo tuvo lugar el 19 de diciembre de 2009.</p>
 			</div>
 		</div>
 		<!-- caja 2 dentro de section -->
 		<div class="card">
 			<!-- elemento 1 en caja 2 -->
 			<div class="card__info">
-				<h2 class="font--lg">Titulo 2</h2>
-				<p class="font--md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet beatae illum illo deserunt odio facilis
-					voluptas veniam autem voluptatem velit, neque dignissimos exercitationem iste, libero nostrum nam
-					nisi cum ad.</p>
+				<h2 class="font--lg">Airbus A350 XWB</h2>
+				<p class="font--md">El Airbus A350 es un avión comercial a reacción de fuselaje ancho diseñado por Airbus SAS y montado conjuntamente con
+				Airbus Operations SAS en Colomiers (Francia). El A350 es el avión más grande de Airbus que sigue en fabricación, debido
+				a que el Airbus A380 se dejó de fabricar en 2019. Además, es la primera aeronave diseñada por Airbus en la que tanto el
+				fuselaje como las estructuras del ala están formadas principalmente por materiales compuestos.8​ Puede transportar entre
+				280 a 366 pasajeros, en configuración de tres clases, dependiendo de la variante.</p>
 			</div>
 			<!-- elemento 2 en caja 2 -->
 			<div class="card__img">
-				<img src="/assets/tortuga.jpg" alt="Tortuga">
+				<img src="/assets/a350.jpeg" alt="Airbus A350">
 			</div>
 		</div>
+				<div class="card">
+					<div class="card__img">
+						<img src="/assets/b777.jpeg" alt="Boeing 777">
+					</div>
+
+					<div class="card__info">
+						<h2 class="font--lg">Boeing 777 ER</h2>
+						<p class="font--md">El Boeing 777 es un avión comercial a reacción bimotor de largo alcance y fuselaje ancho fabricado por la compañía
+						estadounidense Boeing Commercial Airplanes. Es el avión birreactor más grande del mundo, conocido frecuentemente como
+						«Triple Siete»						
+						tiene capacidad para transportar más de 500 pasajeros y un alcance de hasta 17 370 km, dependiendo del modelo.</p>
+					</div>
+					<!-- elemento 2 en caja 2 -->
+				</div>
 	</section>
 
-	<form action="" id="form">
+	<form action="" id="form" class="form-container">
 		<div>
 			<label for="">Nombre</label>
 			<input type="text" placeholder="Ej: Manuel">
@@ -84,11 +101,11 @@
 			<input type="date">
 		</div>
 		<div>
-			<label for="">Colores</label>
+			<label for="">Pais</label>
 			<select>
-				<option value="Colores">Negro</option>
-				<option value="Colores">Blanco</option>
-				<option value="Colores">Azul</option>
+				<option value="Pais">Colombia</option>
+				<option value="Pais">Espana</option>
+				<option value="Pais">Mexico</option>
 			</select>
 		</div>
 		<div>
@@ -99,22 +116,28 @@
 
 	<footer class="footer">
 		<div>
-			<ul>
+			<ul class="footer-links">
 				<li>
 					<a href="https://github.com/mavrk1604" target="_blank">
-          Github					</a>
+						<i class="fa-brands fa-github fa-2xl" style="color: #8175ec;"></i>
+					</a>
 				</li>
 				<li>
 					<a href="https://www.linkedin.com/in/manuel-alejandro-agudelo-velasquez-2b3831186
 
-											" target="_blank">LinkedIn</a>
+											" target="_blank">
+											<i class="fa-brands fa-linkedin-in fa-2xl" style="color: #8175ec;"></i>
+										</a>
 				</li>
 				<li>
 					<a href="https://www.instagram.com/messerschmitt__" target="_blank">
-					Instagram</a>
+						<i class="fa-brands fa-instagram fa-2xl" style="color: #8175ec;"></i>
+					</a>
 				</li>
 				<li>
-					<a href="https://open.spotify.com/user/12150702544?si=0eb82aa209924968" target="_blank">Spotify</a>
+					<a href="https://open.spotify.com/user/12150702544?si=0eb82aa209924968" target="_blank">
+						<i class="fa-brands fa-spotify fa-2xl" style="color: #8175ec;"></i>
+					</a>
 				</li>
 			</ul>
 		</div>
