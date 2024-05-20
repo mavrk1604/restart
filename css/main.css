@@ -24,8 +24,8 @@ header {
   padding: 10px;
   align-items: center;
   background-color:#e7d273;
-  margin: 32px 2rem 32px 2rem;
-  border-radius: 25px;
+  margin: 0px 2rem 32px 2rem;
+  border-radius: 0px 0px 25px 25px;
   position: sticky;
   top: 0;
 }
